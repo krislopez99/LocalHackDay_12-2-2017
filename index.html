@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<style>
+			#pageWrapper {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				
+				font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+				
+				height: 100%;
+				width: 100%;
+				
+				background-color: #AFA98D;
+			}
+			
+			#searchList {
+				position: absolute;
+				top: 33%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			#uploadProfile {				
+				position: absolute;
+				top: 66%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			.buttonText {
+				color: white;
+				font-size: 30px;
+				
+				position: absolute;
+				top: 23%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			
+			.button {
+				width: 400px;
+				height: 100px;
+				border: 5px solid black;
+				border-radius: 30px;
+				text-align: center;
+				
+				background-color: #6D8EA0;
+			}
+			
+			.button:hover {
+				width: 500px;
+				background-color: #CD5C5C;
+				border-color: #960018;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pageWrapper">
+			<a href="findTeammates.html?hack=TEMPLE/"><div class="button"id="searchList"><p class="buttonText">Search For Teammates</p></div></a>
+			<a href="createProfile.html"><div class="button" id="uploadProfile"><p class="buttonText">Upload A User Profile</p></div></a>
+		</div>
+	</body>
+</html>
