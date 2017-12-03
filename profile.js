@@ -13,5 +13,12 @@ firebase.initializeApp(config);
 database = firebase.database();
 
 function enterData() {
-	alert("Thank You For Submitting A User Profile");
+	alert("Thank You");
+	writeData();
+}
+
+function writeData() {
+	var e = document.getElementById("school");
+	var school = e.options[e.selectedIndex].value;
+	window.open("findTeammates.html?hack="+school, "_self");
 }
