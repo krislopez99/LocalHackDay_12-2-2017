@@ -60,12 +60,37 @@
 				background-color: #CD5C5C;
 				border-color: #960018;
 			}
+			
+			.inputF {
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				transform: translate(-50%, 0%);
+				color: #6D8EA0;
+				width: 20%;
+				height: 5%;
+				border: 5px solid #960018;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="pageWrapper">
-			<a href="findTeammates.html?hack=TEMPLE/"><div class="button"id="searchList"><p class="buttonText">Search For Teammates</p></div></a>
+			<select class="inputF" id="school">
+				<option>Select One</option>
+				<option value="TEMPLE/">Temple Local Hack Day</option>
+				<option value="SWARTHMORE/">Swarthmore Local Hack Day</option>
+				<option value="WESTCHESTER/">West Chester Local Hack Day</option>
+				<option value="DELEWARE/">Deleware Local Hack Day</option>
+			</select>
+			<div onclick="getData()"class="button"id="searchList"><p class="buttonText">Search For Teammates</p></div>
 			<a href="createProfile.html"><div class="button" id="uploadProfile"><p class="buttonText">Upload A User Profile</p></div></a>
+			<script type="text/JavaScript">			
+				function getData() {
+					var e = document.getElementById("school");
+					var school = e.options[e.selectedIndex].value;
+					window.open("findTeammates.html?hack="+school, "_self");
+				}
+			</script>
 		</div>
 	</body>
 </html>

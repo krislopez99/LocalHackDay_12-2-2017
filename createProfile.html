@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<style>
+			#pageWrapper {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				
+				font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+				
+				height: 100%;
+				width: 100%;
+				
+				background-color: #AFA98D;
+				
+				overflow: auto;
+			}
+			
+			.inputF {
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0%);
+				color: #6D8EA0;
+				width: 20%;
+				height: 5%;
+				border: 5px solid #960018;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pageWrapper">
+			<br><br>
+			<select class="inputF">
+				<option>Select One</option>
+				<option value="TEMPLE/">Temple Local Hack Day</option>
+				<option value="SWARTHMORE/">Swarthmore Local Hack Day</option>
+				<option value="WESTCHESTER/">West Chester Local Hack Day</option>
+				<option value="DELEWARE/">Deleware Local Hack Day</option>
+			</select>
+			<br><br><br>
+			<input class='inputF' type="text" value="First Name.">
+			<br><br><br>
+			<input class='inputF' type="text" value="Last Name.">
+			<br><br><br>
+			<input class='inputF' type="text" value="Email.">
+			<br><br><br>
+			<input class='inputF' type="text" value="Phone.">
+			<br><br><br>
+			<input class='inputF' type="text" value="School.">
+			<br><br><br>
+			<input class='inputF' type="text" value="Major.">
+			<br><br><br>
+			<input class='inputF' type="text" value="Skills.          Ex: Java, Ruby, HTML, CSS, PHP, C#">
+			<br><br><br>
+			<input class='inputF' type="text" value="Experience.      Ex: Intermediate, Beginner, Expert">
+			<br><br><br>
+			<input class='inputF' type="number" value="18">
+			<br><br><br>
+			<input class='inputF' type="number" value="5">
+			<br><br><br>
+			<input class="inputF"type="file">
+			<br><br><br>
+			<input class="inputF" type="file">
+			<br><br><br>
+			<input class="inputF" type="submit" onclick="enterData()">
+		</div>
+		<script type="text/JavaScript" src="profile.js"></script>
+	</body>
+</html>

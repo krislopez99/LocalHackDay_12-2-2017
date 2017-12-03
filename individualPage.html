@@ -13,11 +13,115 @@
 				
 				background-color: #AFA98D;
 			}
+			
+			#pageWrapper::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+				border-radius: 10px;
+				background-color: black;
+			}
+
+			#pageWrapper::-webkit-scrollbar {
+				width: 12px;
+				background-color: black;
+			}
+
+			#pageWrapper::-webkit-scrollbar-thumb {
+				border-radius: 10px;
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+				background-color: #555;
+			}
+			
+			#userInfo {
+				width: 90%;
+				height: 85%;
+				
+				border: 5px solid black;
+				border-radius: 10px;
+				
+				background-color: #6D8EA0;
+				color: white;
+
+				position: relative;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			
+			#profileImage {
+				height: 350px;
+				width: 350px;
+				border: 5px solid #960018;
+				position: relative;
+				top: -45%;
+				left: 85%;
+				transform: translate(-50%, -50%);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			#name {
+				font-size: 70px;
+				position: relative;
+				left: 52%;
+				transform: translate(-50%, -50%);
+			}
+			
+			#skills {
+				font-size: 30px;
+				position: relative;
+				top: 10%;
+				left: 52%;
+				padding-right: 100px;
+				transform: translate(-50%, -50%);
+			}
+			
+			#email {
+				font-size: 30px;
+				position: relative;
+				top: -5%;
+				left: 52%;
+				padding-right: 100px;
+				transform: translate(-50%, -50%);			
+			}
+			
+			#phone {
+				font-size: 30px;
+				position: relative;
+				top: -5%;
+				left: 52%;
+				padding-right: 100px;
+				transform: translate(-50%, -50%);					
+			}
+			
+			#resumeLink {
+				font-size: 30px;
+				position: relative;
+				top: -5%;
+				left: 52%;
+				padding-right: 100px;
+				transform: translate(-50%, -50%);					
+			}
+			
+			#resumeLinkH {
+				font-size: 40px;
+				text-decoration: none;
+				color: black;
+				position: relative;
+				left: 1%;
+				padding-right: 100px;
+				transform: translate(-50%, -50%);					
+			}
 		</style>
 	</head>
-	<body onload="init()">
+	<body>
 		<div id="pageWrapper">
-		
 		</div>
 		<script type="text/JavaScript" src="jquery-3.2.1.min.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
